@@ -1,7 +1,7 @@
 <?php
-Namespace ITEC\PRESENCIAL\DAW\PREGUNTA;
+Namespace ITEC\PRESENCIAL\DAW\EXAMEN;
 
-class preguntas{
+class pregunta{
     private int $ID;
     private string $descripcion;
     private int $notaMax;
@@ -13,7 +13,7 @@ class preguntas{
     }
 
     public function crearPregunta(int $ID, string $descripcion, int $notaMax){
-        return new preguntas($ID, $descripcion, $notaMax);
+        return new pregunta($ID, $descripcion, $notaMax);
     }
 
     public function ID():int {
@@ -30,6 +30,10 @@ class preguntas{
 
     public function puntuacionFinal(int $puntuacion):bool {
         return $puntuacion <= $this->puntuacionFinal && $puntuacion >= 0;
+    }
+
+    public function isThisID(int $ID) :bool{
+        return $this->ID === $ID;
     }
 }
 ?>

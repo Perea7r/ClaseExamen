@@ -1,5 +1,5 @@
 <?php
-namespace ITEC\PRESENCIAL\DAW\HORA;
+namespace ITEC\PRESENCIAL\DAW\EXAMEN;
 
 class hora {
     private int $horas;

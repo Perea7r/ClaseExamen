@@ -7,12 +7,26 @@
     },
     "autoload": {
         "files": [
-            "src/ClaseExamen.php"
+            "src/asignatura.php",
+            "src/examen.php",
+            "src/fecha.php",
+            "src/hora.php",
+            "src/index.php",
+            "src/listadoPreguntas.php",
+            "src/pregunta.php",
+            "src/profesor.php"
         ]
     },
     "autoload-dev": {
         "files": [
-            "src/ClaseExamen.php"
+            "src/asignatura.php",
+            "src/examen.php",
+            "src/fecha.php",
+            "src/hora.php",
+            "src/index.php",
+            "src/listadoPreguntas.php",
+            "src/pregunta.php",
+            "src/profesor.php"
         ]
     }
 }

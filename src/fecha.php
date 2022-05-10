@@ -1,5 +1,5 @@
 <?php
-namespace ITEC\PRESENCIAL\DAW\FECHA;
+namespace ITEC\PRESENCIAL\DAW\EXAMEN;
 
 use DateTime;
 
