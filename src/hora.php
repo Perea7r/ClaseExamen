@@ -28,7 +28,7 @@ class hora {
     }
     /**
      * Tiempo restante hasta la hora del examen
-     * @return \DateTime;
+     * @return \DateTime
      */
 
     public function getDaysLeft(){
@@ -36,6 +36,4 @@ class hora {
         return $now->diff($this->dateTimeObj)->format('%G');
     }
 }
-
-
 ?>
