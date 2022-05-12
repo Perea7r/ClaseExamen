@@ -1,6 +1,5 @@
 <?php
 namespace ITEC\PRESENCIAL\DAW\EXAMEN;
-
 use ITEC\PRESENCIAL\DAW\EXAMEN\pregunta;
 
 
@@ -39,6 +38,13 @@ class listadoPreguntas{
      public function cogerPregunta(int $ID){
         foreach ($this->preguntas as $pregunta){
             if($pregunta->ID() === $ID) return $pregunta;
+        return null;
+        }
+     }
+
+     public function filtroPreguntas(string $string){
+        foreach($this->preguntas as $pregunta){
+            if ($pregunta === $string) return $pregunta;
         }
      }
 
