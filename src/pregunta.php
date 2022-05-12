@@ -12,7 +12,7 @@ class pregunta{
         $this->ID = $ID;
     }
 
-    public function crearPregunta(int $ID, string $descripcion, int $notaMax){
+    public static function crearPregunta(int $ID, string $descripcion, int $notaMax){
         return new pregunta($ID, $descripcion, $notaMax);
     }
 

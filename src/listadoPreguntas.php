@@ -25,7 +25,7 @@ class listadoPreguntas{
      }
 
      public function nuevaPregunta(String $descripcion, int $puntuacionMaxima){
-         $this->preguntas[] = pregunta::create($descripcion, self::$lastID++, $puntuacionMaxima);
+         $this->preguntas[] = pregunta::crearPregunta($descripcion, self::$lastID++, $puntuacionMaxima);
      }
 
      public function añadirPregunta(pregunta $pregunta){
@@ -33,7 +33,7 @@ class listadoPreguntas{
      }
 
      public function obtenerPreguntas():int {
-        return count($this->$preguntas);
+        return count($this->preguntas);
      }
 
      public function getTotalPuntuacion():int {
