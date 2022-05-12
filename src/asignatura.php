@@ -2,12 +2,19 @@
 namespace ITEC\PRESENCIAL\DAW\EXAMEN;
 class asignatura{
     private int $ID;
-    private string $titulo;
+    private string $nombre;
 
-    public function __construct(int $ID, string $titulo){
+    public function __construct(int $ID, string $nombre){
         $this->ID = $ID;
-        $this->titulo = $titulo;
+        $this->nombre = $nombre;
     }
-}
 
-?>
+    public function ID():int {
+        return $this ->ID;
+    }
+
+    public function nombre():string {
+        return $this -> nombre;
+    }
+
+}

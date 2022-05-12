@@ -32,8 +32,13 @@ class pregunta{
         return $puntuacion <= $this->puntuacionFinal && $puntuacion >= 0;
     }
 
-    public function isThisID(int $ID) :bool{
+    public function isThisID(int $ID):bool{
         return $this->ID === $ID;
+    }
+
+    public function filtro(string $descripcion):bool{
+        $char = similar_text($this->descripcion, $descripcion);
+        return $char >= strlen($descripcion);
     }
 }
 ?>

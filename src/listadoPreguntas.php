@@ -44,7 +44,7 @@ class listadoPreguntas{
 
      public function filtroPreguntas(string $string){
         foreach($this->preguntas as $pregunta){
-            if ($pregunta === $string) return $pregunta;
+            if ($pregunta->filtro() === $string) return $pregunta;
         }
      }
 
