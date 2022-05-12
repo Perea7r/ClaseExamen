@@ -17,4 +17,8 @@ class asignatura{
         return $this -> nombre;
     }
 
+    public static function crearAsignatura(int $ID, string $nombre){
+        return new asignatura($ID, $nombre);
+    }
+
 }
