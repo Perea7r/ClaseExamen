@@ -36,6 +36,12 @@ class listadoPreguntas{
         return count($this->preguntas);
      }
 
+     public function cogerPregunta(int $ID){
+        foreach ($this->preguntas as $pregunta){
+            if($pregunta->ID() === $ID) return $pregunta;
+        }
+     }
+
      public function getTotalPuntuacion():int {
         $total = 0;
         foreach($this->preguntas as $pregunta){
