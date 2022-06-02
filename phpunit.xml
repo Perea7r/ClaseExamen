@@ -12,7 +12,7 @@
     </include>
   </coverage>
   <testsuites>
-    <testsuite name="CLASSEXAM">
+    <testsuite name="CLASSEXAMEN">
       <directory>tests</directory>
     </testsuite>
   </testsuites>

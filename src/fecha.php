@@ -17,7 +17,7 @@ class fecha {
         $this->segundos = $años;
     }
 
-    public function createFecha(int $dias, int $meses, int $años){
+    public static function createFecha(int $dias, int $meses, int $años){
         return new fecha($dias, $meses, $años);
     }
 
